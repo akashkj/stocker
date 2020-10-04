@@ -1,9 +1,6 @@
 from flask import Flask, redirect, render_template, request, url_for
-import jobs
-import rq
 
 app = Flask(__name__)
-jobs.rq.init_app(app)
 
 
 # For sake of simplicty, we keep track of the jobs we've launched
